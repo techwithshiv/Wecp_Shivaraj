@@ -10,7 +10,6 @@ public class Match {
     private String venue;
     private String status;
     private int winnerTeamId;
-
     
     public Match() {
     }

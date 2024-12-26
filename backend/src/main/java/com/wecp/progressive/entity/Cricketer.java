@@ -11,11 +11,10 @@ public class Cricketer {
     private int totalRuns;
     private int totalWickets;
 
-
     
     public Cricketer() {
     }
-    
+
     public int getCricketerId() {
         return cricketerId;
     }
@@ -70,6 +69,7 @@ public class Cricketer {
     public void setTotalWickets(int totalWickets) {
         this.totalWickets = totalWickets;
     }
+    
 
     
 

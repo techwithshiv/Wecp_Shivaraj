@@ -8,9 +8,9 @@ public class User {
     private String email;
     private String role;
 
-    
     public User() {
     }
+
     public User(int userId, String fullName, String userName, String passWord, String email, String role) {
         this.userId = userId;
         this.fullName = fullName;
@@ -57,5 +57,4 @@ public class User {
     }
 
     
-
 }
