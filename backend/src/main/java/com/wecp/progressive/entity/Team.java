@@ -6,7 +6,7 @@ public class Team {
     private String teamName;
     private String location;
     private String ownerName;
-    private int establishment_year;
+    private int establishmentyear;
 
     
 
