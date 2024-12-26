@@ -7,6 +7,7 @@ public class Team {
     private String location;
     private String ownerName;
     private int establishmentYear;
+    
 
     
 
