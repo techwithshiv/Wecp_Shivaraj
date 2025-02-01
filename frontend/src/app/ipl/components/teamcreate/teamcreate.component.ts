@@ -1,5 +1,6 @@
 import { Component, OnInit } from "@angular/core";
 import { FormBuilder, FormGroup, Validators } from "@angular/forms";
+import { Team } from "../../types/Team";
 
 @Component({
   selector: 'app-teamcreate',
@@ -18,7 +19,6 @@ export class TeamCreateComponent implements OnInit {
   teamForm: FormGroup;
   successMessage: string | null = null;
   errorMessage: string | null = null;
-
   constructor(private fb: FormBuilder) {}
 
   ngOnInit(): void {

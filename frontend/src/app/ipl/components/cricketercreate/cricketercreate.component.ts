@@ -48,6 +48,7 @@
 // }
 import { Component, OnInit } from '@angular/core';
 import { AbstractControl, FormBuilder, FormGroup, ValidationErrors, ValidatorFn, Validators } from '@angular/forms';
+import { Cricketer } from '../../types/Cricketer';
 // import { passwordValidator, usernameValidator } from './validators'; // Adjust the import path as needed
 
 @Component({
@@ -57,6 +58,7 @@ import { AbstractControl, FormBuilder, FormGroup, ValidationErrors, ValidatorFn,
 })
 export class CricketerCreateComponent implements OnInit {
   cricketerForm!: FormGroup;
+  cricketer:Cricketer;
   successMessage: string | null = null;
   errorMessage: string | null = null;
 
@@ -92,6 +94,7 @@ usernameValidator(): ValidatorFn {
 
   onSubmit(): void {
     if (this.cricketerForm.valid) {
+        this.cricketer = this.cricketerForm.value;
       this.successMessage = 'Cricketer created successfully!';
       console.log(this.cricketerForm.value);
       this.resetForm();
